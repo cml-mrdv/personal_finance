@@ -451,6 +451,7 @@ nav .contact_side{
     justify-content: center;
     flex-direction: column;
     min-height: 400px;
+    padding: 20px;
 }
 
 
@@ -460,6 +461,24 @@ nav .contact_side{
 
 }
 
+
+.stock{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    padding: 20px;
+}
+
+.stock div{
+    max-width: 600px;
+}
+
+.stock img{
+    width: 30% !important;
+}
 
 
 /* Contact Form Container */
@@ -699,6 +718,12 @@ footer .para span{
         z-index: 999;
     }
 
+
+    .intro iframe{
+        width: 100%;
+    }
+
+
     footer{
         margin-bottom: 80px;
     }
@@ -713,6 +738,22 @@ footer .para span{
 
 }
 
+@media screen and (width < 481px) {
+    .intro iframe{
+        height: 350px !important;
+    }
+
+    .stock{
+        display: flex;
+        flex-direction: column;
+        gap: 20px !important;
+    }
+
+    .stock img{
+        width: 100% !important;
+    }
+    
+}
 
 @media screen and (width < 428px) {
     .investment_container h1{
