@@ -7,6 +7,7 @@
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins";
+    scroll-behavior: smooth;
 }
 
 
@@ -17,8 +18,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    scroll-behavior: smooth;
-    gap: 40px;
+    gap: 20px;
 }
 
 
@@ -448,19 +448,59 @@ nav .contact_side{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    /* align-items: centr; */
+    justify-content: space-between;
+    gap: 5rem;
     min-height: 400px;
     padding: 20px;
+    text-align: center;
 }
 
+
+.intro img{
+    width: 50%;
+}
 
 .intro iframe{
     width: 80%;
     height: 500px !important;
+}
+
+.intro p{
+    max-width: 1000px;
+    width: 100%;
+    font-size:20px;
 
 }
 
+.intro .intro_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    text-align: start;
+}
+
+.intro h1{
+    line-height: 110%;
+    font-size: 58px;
+}
+
+.intro_vid{
+    width: 100%;
+    max-width: 1440px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.intro_vid iframe{
+    width: 80%;
+    height: 500px;
+}
 
 .stock{
     max-width: 1440px;
@@ -531,11 +571,11 @@ nav .contact_side{
 
 .form_group input:focus,
 .form_group textarea:focus {
-    border-color: #007bff;
+    border-color: #1e1b19;
 }
 
 .submit_button {
-    background-color: #007bff;
+    background-color: #1e1b19;
     color: #fff;
     padding: 12px;
     font-size: 1rem;
@@ -548,7 +588,7 @@ nav .contact_side{
 }
 
 .submit_button:hover {
-    background-color: #0056b3;
+    background-color: #302b27;
     transform: translateY(-2px);
 }
 
@@ -559,6 +599,24 @@ nav .contact_side{
 @media (max-width: 768px) {
     .form_container {
         padding: 20px;
+    }
+
+    .intro{
+        display:flex;
+        flex-direction: column;
+    }
+    .intro h1{
+        font-size: 36px;
+    }
+
+
+
+    .intro img{
+        width: 100%;
+    }
+
+    .intro_vid iframe{
+        min-height: 300px;
     }
 }
 
@@ -739,8 +797,9 @@ footer .para span{
 }
 
 @media screen and (width < 481px) {
-    .intro iframe{
+    .intro_vid iframe{
         height: 350px !important;
+        width: 100%;
     }
 
     .stock{
